@@ -1,4 +1,18 @@
-This is your new Play 2.0 application
+Play 2 Sample App
 =====================================
 
-This file will be packaged with your application, when using `play dist`.
+Dependencies
+------------
+
+* play-2.0.4 -> http://www.playframework.com/download
+* mongodb server -> http://www.mongodb.org/downloads
+
+
+Installation
+-----------------
+
+* `git clone https://github.com/4Primes/play20sample.git
+* `cd play20sample`
+* `sbt run`
+* `http://localhost:9000`
+

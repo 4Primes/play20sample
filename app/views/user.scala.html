@@ -1,0 +1,24 @@
+@(userForm:Form[models.User])
+@import helper._
+
+@main("Sample App"){
+  @form(routes.Application.newUser){   
+    <div>
+      <ul>
+        <li>
+          @inputText( userForm("name")) 
+        </li>
+        <li>
+          @inputText( userForm("email")) 
+        </li>
+        <li>
+          @inputPassword( userForm("password"))     
+        </li>
+      </ul>
+    </div>      
+    <input type= "submit" value= "Login" >   
+    
+  }     
+
+
+}

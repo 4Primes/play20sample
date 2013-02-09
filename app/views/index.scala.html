@@ -1,7 +1,11 @@
-@(message: String)
+@(users: List[play.api.libs.json.JsValue])
 
-@main("Welcome to Play 2.0") {
-    
-    @play20.welcome(message)
+@main("Sample App") {
+  <a href="/user">new</a>
+  <ul>
+    @users.map { user =>
+      <li>@user/li>
+    }
+  </ul>
     
 }
